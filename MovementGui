@@ -1,0 +1,251 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local login = Instance.new("Frame")
+local login_2 = Instance.new("TextButton")
+local Username = Instance.new("TextBox")
+local Password = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local gui = Instance.new("Frame")
+local close_2 = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local Jump = Instance.new("TextButton")
+local Speed_2 = Instance.new("TextButton")
+local Jump_2 = Instance.new("TextButton")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+login.Name = "login"
+login.Parent = ScreenGui
+login.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+login.Position = UDim2.new(0.278463662, 0, 0.190854877, 0)
+login.Size = UDim2.new(0, 317, 0, 265)
+
+login_2.Name = "login"
+login_2.Parent = login
+login_2.BackgroundColor3 = Color3.fromRGB(69, 111, 24)
+login_2.Position = UDim2.new(0.182965294, 0, 0.754716992, 0)
+login_2.Size = UDim2.new(0, 200, 0, 50)
+login_2.Font = Enum.Font.SourceSans
+login_2.Text = "Log In"
+login_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+login_2.TextScaled = true
+login_2.TextSize = 14.000
+login_2.TextWrapped = true
+
+Username.Name = "Username"
+Username.Parent = login
+Username.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Username.Position = UDim2.new(0.192429021, 0, 0.0754716992, 0)
+Username.Size = UDim2.new(0, 200, 0, 50)
+Username.Font = Enum.Font.SourceSans
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+
+Password.Name = "Password"
+Password.Parent = login
+Password.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Password.Position = UDim2.new(0.182965294, 0, 0.381132066, 0)
+Password.Size = UDim2.new(0, 200, 0, 50)
+Password.Font = Enum.Font.SourceSans
+Password.Text = "Password"
+Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+Password.TextScaled = true
+Password.TextSize = 14.000
+Password.TextWrapped = true
+
+TextLabel.Parent = login
+TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel.Position = UDim2.new(0, 0, -0.0905660391, 0)
+TextLabel.Size = UDim2.new(0, 317, 0, 44)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Toh's Hub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+close.Name = "close"
+close.Parent = login
+close.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+close.Position = UDim2.new(0.823343873, 0, -0.0905660391, 0)
+close.Size = UDim2.new(0, 56, 0, 44)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+
+gui.Name = "gui"
+gui.Parent = ScreenGui
+gui.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+gui.Position = UDim2.new(0.333333343, 0, 0.165009946, 0)
+gui.Size = UDim2.new(0, 246, 0, 336)
+gui.Visible = false
+
+close_2.Name = "close"
+close_2.Parent = gui
+close_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+close_2.Position = UDim2.new(0.752032518, 0, 0, 0)
+close_2.Size = UDim2.new(0, 61, 0, 50)
+close_2.Font = Enum.Font.SourceSans
+close_2.Text = "X"
+close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+close_2.TextScaled = true
+close_2.TextSize = 14.000
+close_2.TextWrapped = true
+
+Speed.Name = "Speed"
+Speed.Parent = gui
+Speed.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Speed.Position = UDim2.new(0.0609756112, 0, 0.190476194, 0)
+Speed.Size = UDim2.new(0, 81, 0, 81)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "+Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+Jump.Name = "Jump"
+Jump.Parent = gui
+Jump.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Jump.Position = UDim2.new(0.0609756112, 0, 0.580357134, 0)
+Jump.Size = UDim2.new(0, 81, 0, 71)
+Jump.Font = Enum.Font.SourceSans
+Jump.Text = "+Jump"
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump.TextScaled = true
+Jump.TextSize = 14.000
+Jump.TextWrapped = true
+
+Speed_2.Name = "-Speed"
+Speed_2.Parent = gui
+Speed_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Speed_2.Position = UDim2.new(0.609756112, 0, 0.190476194, 0)
+Speed_2.Size = UDim2.new(0, 81, 0, 81)
+Speed_2.Font = Enum.Font.SourceSans
+Speed_2.Text = "-Speed"
+Speed_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed_2.TextScaled = true
+Speed_2.TextSize = 14.000
+Speed_2.TextWrapped = true
+
+Jump_2.Name = "Jump"
+Jump_2.Parent = gui
+Jump_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Jump_2.Position = UDim2.new(0.609756112, 0, 0.580357134, 0)
+Jump_2.Size = UDim2.new(0, 81, 0, 71)
+Jump_2.Font = Enum.Font.SourceSans
+Jump_2.Text = "-Jump"
+Jump_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump_2.TextScaled = true
+Jump_2.TextSize = 14.000
+Jump_2.TextWrapped = true
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+open.Position = UDim2.new(0, 0, 0.421471179, 0)
+open.Size = UDim2.new(0, 71, 0, 24)
+open.Visible = false
+open.Font = Enum.Font.SourceSans
+open.Text = "Open"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextWrapped = true
+
+-- Scripts:
+
+local function FCEYZPT_fake_script() -- login_2.LocalScript 
+	local script = Instance.new('LocalScript', login_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Username.Text == "Haruo" then
+		if script.Parent.Parent.Password.Text == "Toh" then
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent.gui.Visible = true
+		end
+	end
+	end)
+	
+	
+end
+coroutine.wrap(FCEYZPT_fake_script)()
+local function RCABRR_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(RCABRR_fake_script)()
+local function WNELCB_fake_script() -- close_2.LocalScript 
+	local script = Instance.new('LocalScript', close_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.open.Visible = true
+	end)
+	
+end
+coroutine.wrap(WNELCB_fake_script)()
+local function LHTYKO_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+	end)
+	
+end
+coroutine.wrap(LHTYKO_fake_script)()
+local function CIUNNE_fake_script() -- Jump.LocalScript 
+	local script = Instance.new('LocalScript', Jump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 100
+	end)
+	
+end
+coroutine.wrap(CIUNNE_fake_script)()
+local function BWOT_fake_script() -- Speed_2.LocalScript 
+	local script = Instance.new('LocalScript', Speed_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end)
+	
+end
+coroutine.wrap(BWOT_fake_script)()
+local function HZOX_fake_script() -- Jump_2.LocalScript 
+	local script = Instance.new('LocalScript', Jump_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 15
+	end)
+	
+end
+coroutine.wrap(HZOX_fake_script)()
+local function DHUINN_fake_script() -- open.LocalScript 
+	local script = Instance.new('LocalScript', open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.gui.Visible = true
+		script.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(DHUINN_fake_script)()
